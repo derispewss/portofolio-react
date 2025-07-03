@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { ModeToggle } from './shadcn/mode-toggle'
 
 const Navbar = () => {
   return (
@@ -9,6 +10,7 @@ const Navbar = () => {
           <NavLink to="/about" className={({ isActive }) => isActive ? 'text-sky-500' : ''}>About</NavLink>
           <NavLink to="/projects" className={({ isActive }) => isActive ? 'text-sky-500' : ''}>Projects</NavLink>
           <NavLink to="/contact" className={({ isActive }) => isActive ? 'text-sky-500' : ''}>Contact</NavLink>
+          <ModeToggle />
         </nav>
     </header>
   )
